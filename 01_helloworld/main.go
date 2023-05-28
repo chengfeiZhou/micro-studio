@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	pb "micro-studio/helloworld/proto"
+	pb "micro-studio/01_helloworld/proto"
 
 	"go-micro.dev/v4"
 )
