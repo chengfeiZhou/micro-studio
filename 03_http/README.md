@@ -19,6 +19,29 @@ go run cli/main.go
 ```
 
 ## Run RpcService
+准备proto
+```shell
+protoc --proto_path=. --micro_out=. --go_out=. proto/hello/hello.proto
+```
+```
+./
+├── main.go
+└── proto
+    └── hello
+        ├── hello.pb.go
+        ├── hello.pb.micro.go
+        └── hello.proto
 
+2 directories, 4 files
+```
+
+```shell
+go run rpcsrv/main.go
+```
+### Client
+调用rpc客户端
+```shell
+go run rpccli/main.go
+```
 
 
